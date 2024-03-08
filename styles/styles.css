@@ -1,0 +1,308 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --main-background-color:white;
+    --background-color1:#1f242d;
+    --background-color2: rgb(7, 238, 255) ;
+    --background-color3:#dbdbdb;
+    --text-color:#ffffff;
+    --text-color2:rgb(0, 0, 0);
+    --main-text-color:#0ef;
+}
+
+html {
+    font-size:62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--main-background-color);
+    color:var(--text-color2);
+    
+    
+}
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    background-color: var(--background-color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+.logo-design {
+    font-size: 2.5rem;
+    color:var(--text-color);
+    font-weight: 500;
+    cursor: default; 
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left:4rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color:var(--main-text-color);
+}
+
+
+section {
+    min-height: 100vh;
+    padding:10rem 9% 2rem;
+
+}
+
+.home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img {
+    width:30vw;
+    border-radius: 50%;
+}
+.home-content h3 {
+    font-size:3.2rem;
+    font-weight:700;
+}
+
+span {
+    color:tomato;
+}
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p{
+    font-size:2rem;
+
+}
+.btn {
+    display:inline-block;
+    padding:1rem 2.8rem;
+    background-color: var(--background-color2);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--background-color2);
+    font-size:1.6rem;
+    color:black;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    margin: 1.5rem;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--background-color3);
+    color:var(--text-color2);
+}
+
+.heading {
+    text-align: center;
+    font-size:4.5rem;
+
+}
+
+.about-content h2{
+    line-height:4.5rem;
+
+}
+
+.about-content h3{
+    font-size:2.6rem;
+    text-align: center;
+
+}
+
+.about-content p{
+    font-size:2.2rem;
+    margin: 2rem 0 3rem;
+}
+.about .more-about-me {
+    display: none;
+    font-size: 2.2rem;
+    color: var(--text-color2);
+}
+
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    
+}
+.each-skill {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:10px;
+    padding: 1.5rem;
+    background-color: var(--background-color3);
+}
+.each-skill h3 {
+    width:100%;
+}
+.skills-box {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-title {
+    font-size: 2.4rem;
+}
+
+.skills h2 {
+    margin:5rem;
+}
+.skills-container {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.each-skill .skills-box {
+    flex: 1 1 30rem;
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+    
+}
+
+.skills-box h3 {
+    font-size:1.8rem;
+    text-align: center;
+}
+.skills-box img {
+    width:60%;
+    
+}
+
+.each-skill .skills-box:hover {
+    border-color:rgb(122, 186, 255);
+    transform: scale(1.25);
+
+
+}
+
+.projects {
+    background-color: var(--background-color3);
+}
+.portfolio-container span {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 5rem;
+}
+
+.contact h2 {
+    margin-bottom:3rem;
+}
+
+.contact form {
+    max-width:70rem;
+    margin:1rem  auto;
+    text-align:center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size:1.6rem;
+    color: var(--text-color);
+    background-color: var(--background-color3);
+    border-radius: 0.8rem;
+    margin:0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin: 2rem;
+    cursor: pointer;
+}
+.footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: var(--background-color1);
+    color:var(--text-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+
+}
+
+@media screen and (max-width:301px) {
+    html {
+        font-size:23%;
+        
+    }
+    
+}
+
+@media screen and (min-width:302px){
+    html {
+        font-size: 27.5%;
+
+    }
+}
+@media screen and (min-width:459px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media screen and (min-width:576px) {
+    html {
+        font-size: 52.5%;
+    }
+    
+}
