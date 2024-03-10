@@ -1,0 +1,49 @@
+
+
+body {
+    font-size: 62.5%;
+}
+
+.header {
+    text-align:center;
+}
+.back-button {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+ 
+}
+.skills-list {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+
+
+}
+.skills-list img {
+    width:20vw;
+    margin: 2rem;
+}
+hr {
+    margin-top:0;
+    height:4px;
+    background-color:tomato;
+}
+h2{
+    margin-bottom:0;
+}
+.divider {
+    margin:1.2rem;
+}
+
+.navbar {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 4.5vh;
+    color:white;
+}
+.heading {
+    margin-top:5vh;
+}

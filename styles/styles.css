@@ -97,12 +97,14 @@ span {
     font-size:2rem;
 
 }
-.btn {
+.btn, .curriculum-vitae {
     display:inline-block;
     padding:1rem 2.8rem;
     background-color: var(--background-color2);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--background-color2);
+    box-shadow: 0 0 1rem;
+    var(--background-color2);
+    border:none;
     font-size:1.6rem;
     color:black;
     letter-spacing: 0.1rem;
