@@ -1,11 +1,11 @@
-* {
+/** {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	text-decoration: none;
 	font-family: sans-serif;
-}
+}*/
 
 :root {
 	--main-background-color: white;
@@ -17,17 +17,108 @@
 	--main-text-color: #0ef;
 }
 
-html {
-	font-size: 62.5%;
-	overflow-x: hidden;
+
+
+body{
+	font: 15px/1.5 Arial,Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	
 }
 
-body {
-	background-color: var(--main-background-color);
-	color: var(--text-color2);
+
+/* header */
+header{
+	background-color: var(--background-color1);
+	color:var(--text-color);
+	min-height: 70px;
+	padding-top: 30px;
+	border-bottom: var(--background-color2) 4px solid;
 }
 
+.container {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+}
+
+.container a {
+	color: var(--text-color);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header ul{
+	margin: 0;
+	padding:0;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 15px 0 15px;
+}
+header #logo{
+	float:left;
+}
+
+header #logo h1{
+	margin:0;
+}
+header nav{
+	float:right;
+}
+
+span, header .current a{
+	color:#e8491d;
+}
+header a:hover{
+	color:#e8491d;
+	font-weight: bold;
+}
+
+.home-content{
+	margin:0;
+	width:40vw;
+}
+.home-content h1{
+	font-size: 1.5rem;
+	
+}
+.home-img img {
+	width: 25vw;
+	border-radius: 50%;
+}
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0rem;
+	padding:0;
+	width:25vw;
+}
+
+.social-media img {
+	height: 1.5rem;
+	width: 1.5rem;
+
+}
+
+.social-media a {
+
+	transition: 0.5s ease;
+}
+
+.social-media a:hover {
+	transform: scale(1.25);
+}
+
+
+/*
 .header {
+	grid-area: header;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -179,6 +270,8 @@ span {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width:30%;
+	height:50%;
 }
 .skills-title {
 	font-size: 2.4rem;
@@ -208,7 +301,8 @@ span {
 	text-align: center;
 }
 .skills-box img {
-	width: 60%;
+	width: 25%;
+	height:auto;
 }
 
 .each-skill .skills-box:hover {
@@ -284,4 +378,4 @@ span {
 	html {
 		font-size: 52.5%;
 	}
-}
+}*/
