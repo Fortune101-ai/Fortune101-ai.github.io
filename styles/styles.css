@@ -25,6 +25,9 @@ html {
 body {
 	background-color: var(--main-background-color);
 	color: var(--text-color2);
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
 }
 
 header {
@@ -65,7 +68,11 @@ nav a.active {
 	font-weight: bolder;
 	color: var(--main-text-color);
 }
-
+main{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
 section {
 	min-height: 100vh;
 	padding: 10rem 9% 2rem;
