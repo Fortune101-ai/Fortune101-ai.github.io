@@ -38,6 +38,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+	border-bottom:4px solid var(--main-text-color)
 }
 
 .logo-design {
@@ -215,7 +216,7 @@ span {
 	text-align: center;
 }
 .skills-box img {
-	width: 60%;
+	width: 25%;
 }
 
 .each-skill .skills-box:hover {
