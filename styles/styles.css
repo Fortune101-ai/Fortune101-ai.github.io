@@ -41,7 +41,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
-	border-bottom:4px solid var(--main-text-color)
+	border-bottom: 4px solid var(--main-text-color)
 }
 
 .logo-design {
@@ -49,11 +49,12 @@ header {
 	color: var(--text-color);
 	font-weight: 500;
 	cursor: default;
-	float:left;
+	float: left;
 }
-nav{
-	float:right;
-	margin-left:1rem;
+
+nav {
+	float: right;
+	margin-left: 1rem;
 }
 
 nav a {
@@ -68,14 +69,16 @@ nav a.active {
 	font-weight: bolder;
 	color: var(--main-text-color);
 }
-main{
+
+main {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
 }
+
 section {
-	min-height: 100vh;
-	padding: 10rem 9% 2rem;
+
+	padding: 5rem 9% 2rem;
 }
 
 #home {
@@ -83,10 +86,12 @@ section {
 	justify-content: center;
 	align-items: center;
 }
+
 .home-img img {
 	width: 30vw;
 	border-radius: 50%;
 }
+
 .home-content h3 {
 	font-size: 3.2rem;
 	font-weight: 700;
@@ -95,6 +100,7 @@ section {
 span {
 	color: tomato;
 }
+
 .home-content h1 {
 	font-size: 5.6rem;
 	font-weight: 700;
@@ -104,26 +110,29 @@ span {
 .home-content p {
 	font-size: 2rem;
 }
+
 .social-media {
-	display:flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin:3rem;
+	margin: 3rem;
 }
+
 .social-media img {
 	height: 4rem;
 	width: 4rem;
-	
-}
-.social-media a{
 
+}
+
+.social-media a {
 	transition: 0.5s ease;
 }
+
 .social-media a:hover {
 	transform: scale(1.25);
 }
-.btn,
-.curriculum-vitae {
+
+.btn {
 	display: inline-block;
 	padding: 1rem 2.8rem;
 	background-color: var(--background-color2);
@@ -137,6 +146,7 @@ span {
 	margin: 1.5rem;
 	transition: 0.3s ease;
 }
+
 .btn:hover {
 	box-shadow: none;
 }
@@ -166,18 +176,31 @@ span {
 
 .about-content p {
 	font-size: 2.2rem;
+	text-align: center;
 	margin: 2rem 0 3rem;
 }
+
 #about .more-about-me {
 	display: none;
+	text-align: center;
 	font-size: 2.2rem;
 	color: var(--text-color2);
+}
+
+#about .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.curriculum-vitae {
+	color: black
 }
 
 #skills {
 	display: flex;
 	flex-direction: column;
 }
+
 .each-skill {
 	display: flex;
 	flex-direction: row;
@@ -186,15 +209,18 @@ span {
 	padding: 1.5rem;
 	background-color: var(--background-color3);
 }
+
 .each-skill h3 {
-	width: 100%;
+	width: 80%;
 }
+
 .skills-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
 .skills-title {
 	font-size: 2.4rem;
 }
@@ -202,12 +228,13 @@ span {
 .skills h2 {
 	margin: 5rem;
 }
+
 .skills-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .each-skill .skills-box {
@@ -222,8 +249,9 @@ span {
 	font-size: 1.8rem;
 	text-align: center;
 }
+
 .skills-box img {
-	width: 25%;
+	width: 15%;
 }
 
 .each-skill .skills-box:hover {
@@ -234,6 +262,7 @@ span {
 #projects {
 	background-color: var(--background-color3);
 }
+
 .portfolio-container span {
 	text-align: center;
 	font-size: 2.3rem;
@@ -241,28 +270,43 @@ span {
 }
 
 #contact {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
+
 #contact h2 {
 	margin-bottom: 3rem;
 }
+
 .contact-option {
-	margin:1.6rem;
-	width:100%;
+	margin: 1.6rem;
+	width: 100%;
 }
-#contact h3{
-	text-align:center;
+
+#contact h3 {
+	text-align: center;
 	font-size: 2.5rem;
 }
-#contact .email,.contact .social-media{
+
+#contact .email,
+#contact .social-media {
 	background-color: var(--background-color3);
-	padding:1.5rem;
+	padding: 1rem;
 }
-#contact .email{
-	margin:1.2rem;
-	font-size:1.8rem;
+
+#contact .email {
+	margin: 1rem;
+	font-size: 1.8rem;
 	text-align: center;
+}
+
+#contact .social-media {
+	display: flex;
+	justify-content: center;
+}
+
+#contact .social-media a {
+	margin: 0 2rem 0 2rem;
 }
 
 footer {
@@ -290,11 +334,13 @@ footer {
 		font-size: 27.5%;
 	}
 }
+
 @media screen and (min-width: 459px) {
 	html {
 		font-size: 40%;
 	}
 }
+
 @media screen and (min-width: 576px) {
 	html {
 		font-size: 52.5%;
