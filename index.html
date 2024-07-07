@@ -1,28 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Fortunes Website</title>
-  </head>
-  <body>
-    <!-- Navigation content -->
-    <header>
-      <a href="#" class="logo-design"> Fortune <span>Mahloane</span> </a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
 
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact me</a>
-      </nav>
-    </header>
+  <title>Fortunes Website</title>
+</head>
 
-    <main>
+<body>
+  <!-- Navigation content -->
+  <header>
+    <a href="#" class="logo-design"> Fortune <span>Mahloane</span> </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+  </header>
+
+  <main>
     <!-- Home content -->
     <section id="home" class="home">
       <div class="home-content">
@@ -37,13 +39,12 @@
           eye-catching, and attractive webpage/website that fits your needs.
         </p>
         <div class="social-media">
-          <a href="https://github.com/Fortune101-ai" target="_blank">
+          <a href="https://github.com/Fortune101-ai">
             <img src="images/github.svg" alt="Github logo">
           </a>
-          <a href="https://www.linkedin.com/in/fortune-mahloane-4203ba209" target="_blank"
-            ><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
-          <a href="https://twitter.com/@Fortune101_X"
-           target="_blank" ><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
+          <a href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"><img src="images/linkedin.svg"
+              alt="LinkedIn logo"></a>
+          <a href="https://twitter.com/@Fortune101_X"><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
         </div>
       </div>
 
@@ -61,7 +62,7 @@
         <p>
           I am an upcoming full stack web developer currently with the skills of
           a frontend web developer. I am very passionate about programming as a
-          whole. I am always up for a challege and eager to learn at all times.
+          whole. I am always up for a challenge and eager to learn at all times.
         </p>
         <span id="more-about-me" class="more-about-me">
           I am a 22 year old Frontend web developer. It fascinates me to see a
@@ -84,13 +85,14 @@
           almost all the time, but worry not, if you're willing to spend about
           five minutes convincing me why I should go out, I do that proudly.
         </span>
-        <button
-          onclick="displayAboutMe()"
-          id="view-button"
-          class="btn">
-          Find out more
-        </button>
-        <a class="curriculum-vitae" href="curriculum-vitae.html" target="_blank">View CV</a>
+        <div class="buttons">
+          <button onclick="displayAboutMe()" id="view-button" class="btn">
+            Read more
+          </button>
+          <button class="btn">
+            <a class="curriculum-vitae" href="curriculum-vitae.html" target="_blank">View CV</a>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -174,36 +176,35 @@
       <div class="contact-option">
         <h3>Social media platforms</h3>
         <div class="social-media">
-          <a
-            href = "https://www.linkedin.com/in/fortune-mahloane-4203ba209" target="_blank"
-            ><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
-          <a href="https://twitter.com/@Fortune101_X"
-            target="_blank" ><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
+          <a href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"><img src="images/linkedin.svg"
+              alt="LinkedIn logo"></a>
+          <a href="https://twitter.com/@Fortune101_X"><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
         </div>
       </div>
     </section>
   </main>
 
-    <!--Footer-->
-    <footer>
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 by Fortune Mahloane | All Rights Reserved.</p>
-      </div>
-      
-    </footer>
+  <!--Footer-->
+  <footer>
+    <div class="footer-text">
+      <p>Copyright &copy; 2024 by Fortune Mahloane | All Rights Reserved.</p>
+    </div>
 
-    <script>
-      function displayAboutMe() {
-        let elem = document.getElementById("more-about-me");
+  </footer>
 
-        if (elem.style.display === "") {
-          elem.style.display = "block";
-          document.getElementById("view-button").innerText = "See less";
-        } else if (elem.style.display === "block") {
-          document.getElementById("more-about-me").style.display = "";
-          document.getElementById("view-button").innerText = "Find our more";
-        }
+  <script>
+    function displayAboutMe() {
+      let elem = document.getElementById("more-about-me");
+
+      if (elem.style.display === "") {
+        elem.style.display = "block";
+        document.getElementById("view-button").innerText = "Read less";
+      } else if (elem.style.display === "block") {
+        document.getElementById("more-about-me").style.display = "";
+        document.getElementById("view-button").innerText = "Find our more";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
