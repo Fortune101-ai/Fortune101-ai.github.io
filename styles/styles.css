@@ -338,36 +338,12 @@ footer {
 	font-size: 1.6rem;
 }
 
-@media screen and (max-width: 301px) {
-	html {
-		font-size: 23%;
-	}
-}
-
-@media screen and (min-width: 320px) {
-	html {
-		font-size: 27.5%;
-	}
-}
-
-@media screen and (min-width: 459px) {
-	html {
-		font-size: 40%;
-	}
-}
-
-@media screen and (min-width: 576px) {
-	html {
-		font-size: 52.5%;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	.nav-links {
 		display: none;
 		flex-direction: column;
 		position: absolute;
-		top:50px;
+		top: 50px;
 		left: 0;
 		width: 100%;
 		background-color: var(--background-color1);
@@ -381,6 +357,191 @@ footer {
 
 	#hamburger-icon {
 		display: block;
-		
+
+	}
+
+	.home-content h3 {
+		font-size: 2.5rem;
+	}
+
+	.home-content h1 {
+		font-size: 4.5rem;
+	}
+		.home-content p {
+			font-size: 1.6rem;
+		}
+	
+		.social-media img {
+			height: 3rem;
+		}
+	
+		.btn,
+		.curriculum-vitae {
+			font-size: 1.4rem;
+			padding: 0.8rem 2.4rem;
+		}
+	
+		.about-content h3 {
+			font-size: 2rem;
+		}
+	
+		.about-content p {
+			font-size: 1.6rem;
+		}
+	
+		#about .more-about-me {
+			font-size: 1.6rem;
+		}
+	
+		.skills-box h3 {
+			font-size: 1.4rem;
+		}
+	
+		.each-skill .skills-box {
+			padding: 2.5rem 1.5rem 3rem;
+		}
+	
+		.portfolio-container span {
+			font-size: 1.8rem;
+			margin: 2rem 0;
+		}
+	
+		#contact h3 {
+			font-size: 2rem;
+		}
+	
+		#contact .email {
+			font-size: 1.4rem;
+		}
+}
+
+@media screen and (max-width: 576px) {
+	.logo-design {
+		font-size: 2.2rem;
+	}
+
+	.nav-links a {
+		padding: 12px 12px;
+		font-size: 1.8rem;
+	}
+
+	.home-content h3 {
+		font-size: 2.2rem;
+	}
+
+	.home-content h1 {
+		font-size: 4rem;
+	}
+
+	.home-content p {
+		font-size: 1.4rem;
+	}
+
+	.btn,
+	.curriculum-vitae {
+		font-size: 1.2rem;
+		padding: 0.7rem 2.2rem;
+	}
+
+	.about-content h3 {
+		font-size: 2rem;
+	}
+
+	.about-content p {
+		font-size: 1.4rem;
+	}
+
+	#about .more-about-me {
+		font-size: 1.4rem;
+	}
+
+	.skills-box h3 {
+		font-size: 1.2rem;
+	}
+
+	.each-skill .skills-box {
+		padding: 2rem 1rem 2.5rem;
+	}
+
+	.portfolio-container span {
+		font-size: 1.6rem;
+		margin: 1.5rem 0;
+	}
+
+	#contact h3 {
+		font-size: 1.8rem;
+	}
+
+	#contact .email {
+		font-size: 1.2rem;
 	}
 }
+
+@@media screen and (max-width: 320px) {
+	html {
+		font-size: 20%;
+	}
+
+	.logo-design {
+		font-size: 1.8rem;
+	}
+
+	.nav-links a {
+		padding: 10px 8px;
+		font-size: 1.6rem;
+	}
+
+	.home-content h3 {
+		font-size: 2rem;
+	}
+
+	.home-content h1 {
+		font-size: 3.5rem;
+	}
+
+	.home-content p {
+		font-size: 1.2rem;
+	}
+
+	.btn,
+	.curriculum-vitae {
+		font-size: 1rem;
+		padding: 0.6rem 2rem;
+	}
+
+	.about-content h3 {
+		font-size: 1.8rem;
+	}
+
+	.about-content p {
+		font-size: 1.2rem;
+	}
+
+	#about .more-about-me {
+		font-size: 1.2rem;
+	}
+
+	.skills-box h3 {
+		font-size: 1rem;
+	}
+
+	.each-skill .skills-box {
+		padding: 1.8rem 0.8rem 2rem;
+	}
+
+	.portfolio-container span {
+		font-size: 1.4rem;
+		margin: 1rem 0;
+	}
+
+	#contact h3 {
+		font-size: 1.6rem;
+	}
+
+	#contact .email {
+		font-size: 1rem;
+	}
+}
+
+
+
