@@ -16,11 +16,14 @@
     <a href="#" class="logo-design"> Fortune <span>Mahloane</span> </a>
 
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact me</a>
+      <div id="hamburger-icon">&#9776;</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact me</a>
+      </div>
     </nav>
   </header>
 
@@ -191,6 +194,15 @@
   </footer>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerIcon.addEventListener('click', function () {
+          navLinks.classList.toggle('active');
+        });
+      });
+
     function displayAboutMe() {
       let elem = document.getElementById("more-about-me");
 
