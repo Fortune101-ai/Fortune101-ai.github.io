@@ -129,12 +129,12 @@ span {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 3rem;
+	margin: 2rem 0;
 }
 
 .social-media img {
-	height: 4rem;
-	width: 4rem;
+	height: 3rem;
+	width: auto;
 
 }
 
