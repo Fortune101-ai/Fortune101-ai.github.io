@@ -176,7 +176,7 @@ span {
 
 .heading {
 	text-align: center;
-	font-size: 4.5rem;
+	font-size: 4rem;
 }
 
 .about-content h2 {
@@ -184,12 +184,12 @@ span {
 }
 
 .about-content h3 {
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 	text-align: center;
 }
 
 .about-content p {
-	font-size: 2.2rem;
+	font-size: 1.8rem;
 	text-align: center;
 	margin: 2rem 0 3rem;
 }
@@ -197,7 +197,7 @@ span {
 #about .more-about-me {
 	display: none;
 	text-align: center;
-	font-size: 2.2rem;
+	font-size: 1.8rem;
 	color: var(--text-color2);
 }
 
@@ -236,11 +236,11 @@ span {
 }
 
 .skills-title {
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 
 .skills h2 {
-	margin: 5rem;
+	margin: 2rem 0;
 }
 
 .skills-container {
@@ -260,12 +260,13 @@ span {
 }
 
 .skills-box h3 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	text-align: center;
 }
 
 .skills-box img {
 	width: 15%;
+	max-width: 100%;
 }
 
 .each-skill .skills-box:hover {
