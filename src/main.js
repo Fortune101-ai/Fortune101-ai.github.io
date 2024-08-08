@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const articles = data.articles;
                 const newsContainer = document.getElementById('news-content');
 
-                // Limit to the first 6 articles
-                const topArticles = articles.slice(0, 6);
+                const topArticles = articles.slice(0, 5);
 
                 topArticles.forEach((article) => {
                     const articleElement = document.createElement('div');
