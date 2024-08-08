@@ -13,13 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(
-            res => {
+            async res => {
                
                 const latitude = res.coords.latitude;
                 const longitude = res.coords.longitude;
                 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`;
-                const newsUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_API_KEY}`
-                getWeather(weatherUrl)
+                
+
+                //const country = await getCountry(latitude,longitude);
+                const newsUrl = `https://newsapi.org/v2/top-headlines?country=za&apiKey=${NEWS_API_KEY}`
+                getWeather(weatherUrl);
+                getNews(newsUrl)
             },
             (err) => {
                 console.error('An error occurred');
@@ -56,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const getNews = (apiUrl) => {
-
         fetch(apiUrl)
             .then((response) => response.json())
             .then((data) => {
@@ -93,7 +96,23 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     };
 
-    getNews();
+    function getCountry(latitude, longitude) {
+        const url = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json&addressdetails=1`;
+
+        return fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.address) {
+                    const country = data.address.country; // Extract country
+                    return country;
+                } else {
+                    console.error('No results found for the provided coordinates.');
+                }
+            })
+            .catch(error => console.error('Error with reverse geocoding:', error));
+    }
+
+
 });
 
 function displayAboutMe() {
