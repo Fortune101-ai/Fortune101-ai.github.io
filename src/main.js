@@ -1,4 +1,4 @@
-import { WEATHER_API_KEY,NEWS_API_KEY} from "./api_keys.js";
+import { WEATHER_API_KEY,NEWS_API_KEY} from "../api_keys.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const hamburgerIcon = document.getElementById('hamburger-icon');
@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const weatherElement = document.getElementById('temperature');
     const weatherImageElement = document.getElementById('weather-image');
-
-    //const location = 'Pretoria, ZA';
-    let location = {};
 
     if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(
@@ -59,8 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const getNews = (apiUrl) => {
-
-        const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${NEWS_API_KEY}`;
 
         fetch(apiUrl)
             .then((response) => response.json())
