@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const getNews = (apiUrl) => {
         fetch(apiUrl)
             .then((response) => response.json())
-            .then((data) => {
-                const articles = data.articles;
+            .then(async (data) => {
+                const articles = await data.articles;
                 const newsContainer = document.getElementById('news-content');
 
                 const topArticles = articles.slice(0, 5);
