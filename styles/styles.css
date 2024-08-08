@@ -105,6 +105,20 @@ section {
 	height:auto;
 	border-radius: 50%;
 }
+#weather-data {
+	display:flex;
+	flex-direction:row;
+	justify-content: start;
+	align-items: center;
+}
+#weather-image{
+	display:block;
+	width:20%;
+}
+#temperature{
+	font-size: 1.4em;
+	font-weight: 550;
+}
 
 .home-content h3 {
 	font-size: 3rem;
@@ -322,6 +336,25 @@ span {
 
 #contact .social-media a {
 	margin: 0 2rem 0 2rem;
+}
+
+.news-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.news-item {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+.news-item h2 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.news-item p {
+	margin: 5px 0;
 }
 
 footer {

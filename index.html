@@ -1,215 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
+		<title>Fortunes Website</title>
+	</head>
 
-  <title>Fortunes Website</title>
-</head>
+	<body>
+		<header>
+			<a href="#" class="logo-design"> Fortune <span>Mahloane</span> </a>
 
-<body>
-  <header>
-    <a href="#" class="logo-design"> Fortune <span>Mahloane</span> </a>
+			<nav>
+				<div id="hamburger-icon">&#9776;</div>
+				<div class="nav-links">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact me</a>
+				</div>
+			</nav>
+		</header>
 
-    <nav>
-      <div id="hamburger-icon">&#9776;</div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact me</a>
-      </div>
-    </nav>
-  </header>
+		<main>
+			<section id="home" class="home">
+				<div class="home-content">
+					<div class="divider weather-content">
+						<div id="weather-data">
+							<img id="weather-image" src="" alt="weather icon" />
+							<div id="temperature"></div>
+						</div>
+					</div>
 
-  <main>
-    <section id="home" class="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Fortune Mahloane</h1>
-        <h3>And I'm a <span>Junior Web Developer</span></h3>
-        <p>
-          Do you need someone to design a product landing page for your
-          business? Do you want a technical documentation page for your chosen
-          topic? Do you need a tribute page to honor an idol or a loved one? I
-          am here to fulfill your needs. Allow me create a functional but also
-          eye-catching, and attractive webpage/website that fits your needs.
-        </p>
-        <div class="social-media">
-          <a target="_blank" href="https://github.com/Fortune101-ai">
-            <img src="images/github.svg" alt="Github logo">
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"><img src="images/linkedin.svg"
-              alt="LinkedIn logo"></a>
-          <a target="_blank" href="https://twitter.com/@Fortune101_X"><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
-        </div>
-      </div>
+					<h3>Hello, It's Me</h3>
+					<h1>Fortune Mahloane</h1>
+					<h3>And I'm a <span>Junior Web Developer</span></h3>
+					<p>
+						Do you need someone to design a product landing page for your
+						business? Do you want a technical documentation page for your chosen
+						topic? Do you need a tribute page to honor an idol or a loved one? I
+						am here to fulfill your needs. Allow me create a functional but also
+						eye-catching, and attractive webpage/website that fits your needs.
+					</p>
+					<div class="social-media">
+						<a target="_blank" href="https://github.com/Fortune101-ai">
+							<img src="images/github.svg" alt="Github logo" />
+						</a>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"
+							><img src="images/linkedin.svg" alt="LinkedIn logo"
+						/></a>
+						<a target="_blank" href="https://twitter.com/@Fortune101_X"
+							><img src="images/x-twitter.svg" alt="Twitter-Logo"
+						/></a>
+					</div>
+				</div>
 
-      <div class="home-img">
-        <img src="images/logo-img.jpg" alt="Logo image">
-      </div>
-    </section>
+				<div class="home-img">
+					<img src="images/logo-img.jpg" alt="Logo image" />
+				</div>
+			</section>
 
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>I am a Frontend web developer</h3>
-        <p>
-          I am an upcoming full stack web developer currently with the skills of
-          a frontend web developer. I am very passionate about programming as a
-          whole. I am always up for a challenge and eager to learn at all times.
-        </p>
-        <span id="more-about-me" class="more-about-me">
-          I am a 22 year old Frontend web developer. It fascinates me to see a
-          few lines of code bring to life something as magical as a fully
-          functional website. I chose to focus on Frontend web development
-          because of how it can add value to almost any field/industry you can
-          think of, be it medical, education, marketing, entertainment, etc. I
-          like to think of myself as a problem solver hence I like the
-          intellectual challenge that web development brings to the table. I
-          like the creativity involved with creating websites/web apps. My long
-          term goal is to become a full stack web developer.
-          <br>
-          <br>
-          When I am not coding then I am probably eating a triple decked pizza
-          while watching people visit
-          <span>suplex city!</span> If not that then I tend to leave this
-          reality of ours and join the simulated world of GTA.
-          <br>
-          <br>It's pretty clear at this point that I am behind the screen
-          almost all the time, but worry not, if you're willing to spend about
-          five minutes convincing me why I should go out, I do that proudly.
-        </span>
-        <div class="buttons">
-          <button onclick="displayAboutMe()" id="view-button" class="btn">
-            Read more
-          </button>
-          <a class="curriculum-vitae" href="curriculum-vitae.html" target="_blank">View CV</a>
-        </div>
-      </div>
-    </section>
+			<section class="about" id="about">
+				<div class="about-content">
+					<h2 class="heading">About <span>Me</span></h2>
+					<h3>I am a Frontend web developer</h3>
+					<p>
+						I am an upcoming full stack web developer currently with the skills
+						of a frontend web developer. I am very passionate about programming
+						as a whole. I am always up for a challenge and eager to learn at all
+						times.
+					</p>
+					<span id="more-about-me" class="more-about-me">
+						I am a 22 year old Frontend web developer. It fascinates me to see a
+						few lines of code bring to life something as magical as a fully
+						functional website. I chose to focus on Frontend web development
+						because of how it can add value to almost any field/industry you can
+						think of, be it medical, education, marketing, entertainment, etc. I
+						like to think of myself as a problem solver hence I like the
+						intellectual challenge that web development brings to the table. I
+						like the creativity involved with creating websites/web apps. My
+						long term goal is to become a full stack web developer.
+						<br />
+						<br />
+						When I am not coding then I am probably eating a triple decked pizza
+						while watching people visit
+						<span>suplex city!</span> If not that then I tend to leave this
+						reality of ours and join the simulated world of GTA.
+						<br />
+						<br />It's pretty clear at this point that I am behind the screen
+						almost all the time, but worry not, if you're willing to spend about
+						five minutes convincing me why I should go out, I do that proudly.
+					</span>
+					<div class="buttons">
+						<button onclick="displayAboutMe()" id="view-button" class="btn">
+							Read more
+						</button>
+						<a
+							class="curriculum-vitae"
+							href="curriculum-vitae.html"
+							target="_blank"
+							>View CV</a
+						>
+					</div>
+				</div>
+			</section>
 
-    <!--Skills-->
+			<!--Skills-->
 
-    <section id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
+			<section id="skills">
+				<h2 class="heading">My <span>Skills</span></h2>
 
-      <h3 class="skills-title">Basic <span>web design</span></h3>
-      <div class="each-skill web-design">
-        <div class="skills-box">
-          <h3>Html</h3>
-          <img src="images/html.png" alt="html logo">
-        </div>
+				<h3 class="skills-title">Basic <span>web design</span></h3>
+				<div class="each-skill web-design">
+					<div class="skills-box">
+						<h3>Html</h3>
+						<img src="images/html.png" alt="html logo" />
+					</div>
 
-        <div class="skills-box">
-          <h3>Css</h3>
-          <img src="images/css.png" alt="css logo">
-        </div>
+					<div class="skills-box">
+						<h3>Css</h3>
+						<img src="images/css.png" alt="css logo" />
+					</div>
 
-        <div class="skills-box">
-          <h3>Javascript</h3>
-          <img src="images/javascript.png" alt="Javascript logo">
-        </div>
-      </div>
+					<div class="skills-box">
+						<h3>Javascript</h3>
+						<img src="images/javascript.png" alt="Javascript logo" />
+					</div>
+				</div>
 
-      <h3 class="skills-title">Css <span>frameworks</span></h3>
-      <div class="each-skill css-frameworks">
-        <div class="skills-box">
-          <h3>Bootstrap</h3>
-          <img src="images/bootstrap.png" alt="bootstrap logo">
-        </div>
+				<h3 class="skills-title">Css <span>frameworks</span></h3>
+				<div class="each-skill css-frameworks">
+					<div class="skills-box">
+						<h3>Bootstrap</h3>
+						<img src="images/bootstrap.png" alt="bootstrap logo" />
+					</div>
 
-        <div class="skills-box">
-          <h3>Sass</h3>
-          <img class="sass-img" src="images/sass.png" alt="Sass logo">
-        </div>
-      </div>
+					<div class="skills-box">
+						<h3>Sass</h3>
+						<img class="sass-img" src="images/sass.png" alt="Sass logo" />
+					</div>
+				</div>
 
-      <h3 class="skills-title">Javascript <span>frameworks</span></h3>
-      <div class="each-skill js-frameworks">
-        <div class="skills-box">
-          <h3>JQuery</h3>
-          <img src="images/jquery.png" alt="JQuery logo">
-        </div>
-      </div>
+				<h3 class="skills-title">Javascript <span>frameworks</span></h3>
+				<div class="each-skill js-frameworks">
+					<div class="skills-box">
+						<h3>JQuery</h3>
+						<img src="images/jquery.png" alt="JQuery logo" />
+					</div>
+				</div>
 
-      <h3 class="skills-title">
-        Additional <span>programming languages</span>
-      </h3>
-      <div class="each-skill programming-languages">
-        <div class="skills-box">
-          <h3>Python</h3>
-          <img src="images/python.png" alt="python logo">
-        </div>
-        <div class="skills-box">
-          <h3>Java</h3>
-          <img src="images/java.png" alt="java logo">
-        </div>
-      </div>
-    </section>
+				<h3 class="skills-title">
+					Additional <span>programming languages</span>
+				</h3>
+				<div class="each-skill programming-languages">
+					<div class="skills-box">
+						<h3>Python</h3>
+						<img src="images/python.png" alt="python logo" />
+					</div>
+					<div class="skills-box">
+						<h3>Java</h3>
+						<img src="images/java.png" alt="java logo" />
+					</div>
+				</div>
+			</section>
 
-    <!--Projects section-->
-    <section id="projects">
-      <h2 class="heading">My<span>Projects</span></h2>
+			<!--Projects section-->
+			<section id="projects">
+				<h2 class="heading">My<span>Projects</span></h2>
 
-      <div class="portfolio-container">
-        <span>...still in progress</span>
-      </div>
-    </section>
+				<div class="portfolio-container">
+					<span>...still in progress</span>
+				</div>
+			</section>
 
-    <!--Contact me-->
-    <section id="contact">
-      <h2 class="heading">Get <span>in touch</span></h2>
+			<!--Contact me-->
+			<section id="contact">
+				<h2 class="heading">Get <span>in touch</span></h2>
 
-      <div class="contact-option">
-        <h3>Email</h3>
-        <div class="email">sensefortune01@gmail.com</div>
-      </div>
+				<div class="contact-option">
+					<h3>Email</h3>
+					<div class="email">sensefortune01@gmail.com</div>
+				</div>
 
-      <div class="contact-option">
-        <h3>Social media platforms</h3>
-        <div class="social-media">
-          <a target="_blank" href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"><img src="images/linkedin.svg"
-              alt="LinkedIn logo"></a>
-          <a target="_blank" href="https://twitter.com/@Fortune101_X"><img src="images/x-twitter.svg" alt="Twitter-Logo"></a>
-        </div>
-      </div>
-    </section>
-  </main>
+				<div class="contact-option">
+					<h3>Social media platforms</h3>
+					<div class="social-media">
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/fortune-mahloane-4203ba209"
+							><img src="images/linkedin.svg" alt="LinkedIn logo"
+						/></a>
+						<a target="_blank" href="https://twitter.com/@Fortune101_X"
+							><img src="images/x-twitter.svg" alt="Twitter-Logo"
+						/></a>
+					</div>
+				</div>
+			</section>
 
-  <footer>
-    <div class="footer-text">
-      <p>Copyright &copy; 2024 by Fortune Mahloane | All Rights Reserved.</p>
-    </div>
+			<div class="news-content" id="news-content">
+				<h1>Latest News</h1>
+			</div>
+		</main>
 
-  </footer>
+		<footer>
+			<div class="footer-text">
+				<p>Copyright &copy; 2024 by Fortune Mahloane | All Rights Reserved.</p>
+			</div>
+		</footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburgerIcon.addEventListener('click', function () {
-          navLinks.classList.toggle('active');
-        });
-      });
-
-    function displayAboutMe() {
-      let elem = document.getElementById("more-about-me");
-
-      if (elem.style.display === "") {
-        elem.style.display = "block";
-        document.getElementById("view-button").innerText = "Read less";
-      } else if (elem.style.display === "block") {
-        document.getElementById("more-about-me").style.display = "";
-        document.getElementById("view-button").innerText = "Find our more";
-      }
-    }
-  </script>
-</body>
-
+		<script type="module" src="src/main.js">
+		</script>
+	</body>
 </html>
