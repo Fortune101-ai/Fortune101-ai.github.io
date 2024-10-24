@@ -296,4 +296,44 @@ span {
     color: var(--snd-bf-color);
 }
 
+.connect h2 {
+    margin-bottom: 4rem;
+}
+
+.connect form {
+    max-width:80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.connect .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.connect form .input-box input,
+.connect form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bf-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.connect form .input-box input {
+    width: 40%;
+}
+
+.connect form textarea {
+    resize: none;
+}
+
+.connect form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
 
