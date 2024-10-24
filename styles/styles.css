@@ -337,3 +337,16 @@ span {
     cursor: pointer;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 10%;
+    background: var(--snd-bf-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
