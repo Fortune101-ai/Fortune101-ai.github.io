@@ -44,12 +44,24 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.header.sticky {
+  background: rgba(25, 31, 54, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   font-size: 3rem;
   color: var(--text-color);
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--main-color);
 }
 
 .navbar a {
@@ -57,11 +69,28 @@ section {
   color: var(--text-color);
   margin-left: 4rem;
   font-weight: 700;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
 }
 
 .navbar a:hover,
-.navbar a:active {
+.navbar a.active {
   color: var(--main-color);
 }
 
@@ -69,6 +98,12 @@ section {
   font-size: 4rem;
   color: var(--text-color);
   display: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#menu-icon:hover {
+  color: var(--main-color);
 }
 
 .home {
@@ -77,10 +112,11 @@ section {
   align-items: center;
   flex-direction: row;
   text-align: left;
+  gap: 4rem;
 }
+
 .home-content {
   flex: 1;
-  margin-right: 2rem;
 }
 
 .home-img {
@@ -89,13 +125,37 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .home-img img {
   border: 2px solid var(--main-color);
   border-radius: 20px;
+  width: 30vw;
+  max-width: 400px;
+  min-width: 300px;
+  height: auto;
+  animation: floatingImage 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.home-img img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatingImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home-content h3 {
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 span {
@@ -106,30 +166,12 @@ span {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.4;
-}
-
-.home-img img {
-  width: 30vw;
-  max-width: 100%;
-  animation: floatingImage 4s ease-in-out infinite;
-}
-
-@keyframes floatingImage {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-2.4rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+  margin-bottom: 1rem;
 }
 
 .home-content p {
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .social-media a {
@@ -144,16 +186,14 @@ span {
   font-size: 2.2rem;
   color: var(--main-color);
   margin: 1rem 1.5rem 1rem 0;
-  transition:
-    background 0.3s,
-    color 0.3s,
-    box-shadow 0.3s;
+  transition: all 0.3s ease;
 }
 
 .social-media a:hover {
   background: var(--main-color);
   color: var(--snd-bf-color);
   box-shadow: 0 0 1rem var(--main-color);
+  transform: translateY(-3px);
 }
 
 .btn {
@@ -163,11 +203,15 @@ span {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.8rem;
-  transition: 0.5s ease;
+  color: var(--snd-bf-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
-  box-shadow: none;
+  box-shadow: 0 0 2rem var(--main-color);
+  transform: translateY(-2px);
 }
 
 .about {
@@ -182,6 +226,7 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  margin-bottom: 3rem;
 }
 
 .about-content h2 {
@@ -191,11 +236,13 @@ span {
 
 .about-content h3 {
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  line-height: 1.6;
 }
 
 .skills h2 {
@@ -217,16 +264,25 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
-  transition: 0.5s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .skills-container .skills-box:hover {
   border-color: var(--main-color);
-  transform: scale(1.03);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(89, 178, 244, 0.2);
 }
 
 .skills-box i {
-  font-size: 2rem;
+  font-size: 7rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skills-box:hover i {
+  transform: rotateY(360deg);
 }
 
 .skills-box h3 {
@@ -244,7 +300,7 @@ span {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-items: center;
   gap: 2.5rem;
 }
@@ -255,11 +311,19 @@ span {
   box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
 }
 
 .project-box img {
   width: 100%;
-  transition: 0.5s ease;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
   opacity: 0.8;
 }
 
@@ -281,7 +345,7 @@ span {
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .project-box:hover .project-layer {
@@ -290,11 +354,13 @@ span {
 
 .project-layer h4 {
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .project-layer p {
   font-size: 1.6rem;
   margin: 0.4rem 0 1rem;
+  line-height: 1.4;
 }
 
 .project-layer a {
@@ -305,6 +371,12 @@ span {
   height: 5rem;
   background: var(--text-color);
   border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.project-layer a:hover {
+  background: var(--bg-color);
+  transform: scale(1.1);
 }
 
 .project-layer a i {
@@ -328,6 +400,7 @@ span {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .connect form .input-box input,
@@ -339,11 +412,18 @@ span {
   background: var(--snd-bf-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.connect form .input-box input:focus,
+.connect form textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 1rem rgba(89, 178, 244, 0.2);
 }
 
 .connect form .input-box input {
   flex: 1;
-  margin-right: 1rem;
 }
 
 .connect form textarea {
@@ -357,20 +437,26 @@ span {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 5%;
-  background: var(--snd-bf-color);
+  background: var(--bg-color);
 }
 
 .footer-text {
   font-size: 1.6rem;
+  text-align: center;
 }
 
+/* Media Queries */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+  
+  .project-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -378,23 +464,23 @@ span {
   .header {
     padding: 2rem 4%;
   }
-
+  
   section {
     padding: 10rem 4%;
   }
-
+  
   .skills {
-    padding: 7rem;
+    padding: 7rem 4%;
   }
-
+  
   .projects {
     padding-bottom: 7rem;
   }
-
+  
   .connect {
     min-height: auto;
   }
-
+  
   .footer {
     padding: 2rem 4%;
   }
@@ -404,7 +490,7 @@ span {
   #menu-icon {
     display: block;
   }
-
+  
   .navbar {
     position: absolute;
     top: 100%;
@@ -416,59 +502,70 @@ span {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
   }
-
+  
   .navbar.active {
     display: block;
   }
-
+  
   .navbar a {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
   }
-
+  
+  .navbar a::after {
+    display: none;
+  }
+  
   .home {
     flex-direction: column;
     text-align: center;
+    gap: 2rem;
   }
-
+  
   .home-content {
-    margin-right: 0;
     order: 1;
   }
-
+  
   .home-img {
     order: 2;
     margin-top: 2rem;
   }
-
+  
   .home-content h3 {
     font-size: 2.4rem;
   }
-
+  
   .home-content h1 {
     font-size: 4.5rem;
   }
-
+  
   .home-img img {
     width: 75vw;
+    max-width: 350px;
     margin-top: 4rem;
   }
-
+  
   .about {
     flex-direction: column;
   }
-
+  
   .skills h2 {
     margin-bottom: 3rem;
+    margin-left: 0;
+    text-align: center;
   }
-
+  
   .projects h2 {
     margin-bottom: 3rem;
   }
-
+  
   .project-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .project-box {
+    height: 250px;
   }
 }
 
@@ -476,12 +573,16 @@ span {
   .project-container {
     grid-template-columns: 1fr;
   }
-
+  
+  .project-box {
+    height: 280px;
+  }
+  
   .home-img img {
     width: 75vw;
     margin-top: 4rem;
   }
-
+  
   .about {
     flex-direction: column;
   }
@@ -491,9 +592,16 @@ span {
   html {
     font-size: 50%;
   }
-
+  
+  .connect .input-box {
+    flex-direction: column;
+  }
+  
   .connect form .input-box input {
     width: 100%;
-    margin-right: 0;
+  }
+  
+  .project-box {
+    height: 250px;
   }
 }
